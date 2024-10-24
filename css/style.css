@@ -9,10 +9,15 @@
     --primary-color: #3c3e3f;
     --secondary-color: #a2a7aa;
     --text-color: white;
-    --background-color: #34495e;
+    --text-cardColor: #000;
+    --background-color: linear-gradient(307deg, rgba(5,34,9,1) 9%, rgba(86,213,110,1) 19%, rgba(26,150,38,1) 29%, rgba(5,34,9,1) 84%);
 }
 
 /* CONTEUDO PRINCIPAL */
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+}
 .main{
     display: flex;
     flex-direction: column;
@@ -42,6 +47,7 @@
     padding: 18px;
     margin-top: 15px;
     text-align: center;
+    font-size: 25pt;
 }
 .conteudo-texto h5{
     padding: 18px;
@@ -63,6 +69,7 @@ img{
 }
 .card{
     width: 600px;
+    color: var(--text-cardColor)
 }
 .menor{
     width: 950px;
@@ -80,9 +87,13 @@ img{
 }
 /* ------------FIM DAS IMAGENS */
 .linha-separadora{
-    border-bottom: #3c3e3f 0.4px solid;
+    border-bottom: var(--text-cardColor) 0.6px solid;
     width: 70%;
     margin: 10px 0;
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    border: none;
 }
 /* ------------- FIM CONTEUDO PRINCIPAL */
 
