@@ -13,6 +13,10 @@
     --background-color: linear-gradient(307deg, rgba(5,34,9,1) 9%, rgba(86,213,110,1) 19%, rgba(26,150,38,1) 29%, rgba(5,34,9,1) 84%);
 }
 
+/* NAVEGAÇÃO */
+
+/* -------- FIM NAVEGAÇÃO */
+
 /* CONTEUDO PRINCIPAL */
 body{
     background: var(--background-color);
@@ -69,7 +73,8 @@ img{
 }
 .card{
     width: 600px;
-    color: var(--text-cardColor)
+    color: var(--text-cardColor);
+    background-color: var(--secondary-color);
 }
 .menor{
     width: 950px;
@@ -114,4 +119,31 @@ img{
         margin: 0;
         text-align: center;
     }
+}
+/*--------------------RODAPE*/
+.rodape{
+    background-color: rgb(36, 88, 41);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    font-family: "Telex", serif;
+}
+.redes-sociais{
+    display: flex;
+    font-size: 30px;
+    gap: 15px;
+    justify-content: center;
+}
+.redes-sociais a i{
+    color: var(--text-color);
+}
+.redes-sociais a:hover{
+    transform: translateX(-5px) rotate(5deg);
+}
+.rodape p{
+    font-family: "Inconsolata", monospace;
+    font-size: 15px;
+    border-top: 0.4px solid var(--secondary-color);
+    margin-top: 10px;
+    padding-top:5px ;
 }
